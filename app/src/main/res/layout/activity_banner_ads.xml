@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:maxads="http://schemas.applovin.com/android/1.0"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BannerAdsActivity">
+
+
+    <com.applovin.mediation.ads.MaxAdView
+        android:id="@+id/adTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        maxads:adUnitId="25dfa7de644bb529" />
+
+    <Button
+        android:id="@+id/interstitialads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interstitial ads"
+        app:layout_constraintBottom_toTopOf="@+id/adBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adTop" />
+
+    <com.applovin.mediation.ads.MaxAdView
+        android:id="@+id/adBottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        maxads:adUnitId="25dfa7de644bb529" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
