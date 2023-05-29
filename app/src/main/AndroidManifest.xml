@@ -25,14 +25,15 @@
             </intent-filter>
         </activity>
 
+
         <meta-data
             android:name="applovin.sdk.key"
-            android:value="0pRvz08cuJ6GxwBrAW4rCidfcybbcwXHKooKG2DsgId3TgKgOLuXrHuMKNropGePJrtTnisUkAJM7KDK9cTxhy" />
+            android:value="" />
 
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"/>
+
     </application>
 
 </manifest>

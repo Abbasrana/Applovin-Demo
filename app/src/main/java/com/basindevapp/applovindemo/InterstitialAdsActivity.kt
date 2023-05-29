@@ -21,7 +21,7 @@ class InterstitialAdsActivity : AppCompatActivity(), MaxAdListener {
     }
     private fun createInterstitialAd()
     {
-        interstitialAd = MaxInterstitialAd( "180002e67afa3450", this )
+        interstitialAd = MaxInterstitialAd( "", this )
         interstitialAd.setListener( this )
 
         // Load the first ad
